@@ -1,87 +1,19 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in docs.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: "Security"
+icon: "shield-exclamation"
 ---
 
-The navigation menu is the list of links on every website.
+## **Intellectual Property and Security**
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+All intellectual property developed by staff members during their employment with Haunt, including discoveries or inventions made in the performance of their duties related in any way to the business of Haunt, will remain the property of Haunt.
 
-## Navigation syntax
+Staff members may be given access to confidential information, data or any other server-related property/information in the performance of their duties. This must be protected and used only in the interests of Haunt.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+**Staff members must not**:
 
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+- Disclose or use any part of any confidential information outside of the performance of their duties, and in the interests of Haunt.
+- Authorize or be involved in the improper use or disclosure of confidential information.
 
 <Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
+  This includes, but is not limited to: sharing documents, unreleased updates, forms, and messages from staff channels.
 </Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.

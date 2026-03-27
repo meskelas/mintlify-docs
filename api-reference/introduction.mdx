@@ -1,33 +1,42 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Usage "
+icon: "gavel"
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+We use Haunt for moderation purposes. Below, you can find commands and when they should be used. The prefix for Haunt is `;` and `;help` can be used, in case you forget any of the commands. For all the slash commands, such as kicking and banning, you can type **/** for all the suggestions to pop up.
 
-## Welcome
+The action of adding proof to punishment, to be saved and documented for later potential use. Keep in mind: You must **never** include proof in the punishment command itself. Adding proof is mandatory if you have either banned or kicked a user. 
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+<Card title="Ban" color="#ff0000" icon="ban">
+  - Command: /ban \<User\> \<Reason\> | ;ban 428132313356828672 Raiding.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
+  The most common reason for a ban is DM Advertising (the action of sending unrequested links and/or different types of advertisements through Direct Messages to members of our server). Some more ban reasons are: Violation of Discord’s Terms of Service and Violation of Discord’s Community Guidelines.\\
 </Card>
 
-## Authentication
+<Card title="Kick" color="#ff6600" icon="user-minus">
+  - Command: /kick \<User\> \<Reason\> | ;kick 428132313356828672 Spamming
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+  The most common kick reason is a <u>constant rule violation</u>. For instance, after repeated warnings and mutes. You may also use a kick when a newly joined user is causing a lot of problems, and a ban would be too harsh.
+</Card>
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+<Card title="Mute" color="#ffb900" icon="timer">
+  - Command: /mute \<user\> \<duration\> \<reason\> | ;mute 428132313356828672 1d Spamming.
+
+  Mutes should never be permanent. Common reasons include: spamming, disregarding bot warnings, and insulting/swearing excessively.\\
+</Card>
+
+<Card title="Warning" color="#ff9500" icon="triangle-exclamation">
+  - Command:  /warn \<user\> \<reason\> | ;warn 428132313356828672 Swearing excessively.
+
+  The action of warning a user through a bot should be performed in #staff-commands to keep them private. When a user breaks a rule as a mistake or just slightly breaks them, you may warn them **verbally**. You should warn any user who breaks a rule, and all of the punishments above are too harsh.\\
+</Card>
+
+<Card title="Verbal Warning" color="#ff9500" icon="envelope-open-text">
+  Before giving any punishment, unless it is a ToS Violation, <u>verbal warnings should be given.</u> This allows for the user to have a chance at fixing their mistakes without going on their record. Verbal Warnings should be given via DMs or Chat.
+</Card>
+
+<Card title="Proof" color="#00ff6d" icon="notes">
+  - Command: /case create \<user\> \<case details\> | ;case create 428132313356828672 example\_image.png
+
+  After taking action against a user, you must submit proof via the case create command. Having logged proof is crucial to moderation-related cases and keeping records of all actions taken against our members.
+</Card>

@@ -1,110 +1,46 @@
 ---
-title: "Reusable snippets"
-description: "Reusable, custom snippets to keep content in sync"
-icon: "recycle"
+icon: "briefcase"
+title: "Equal Employment Opportunity"
 ---
 
-import SnippetIntro from '/snippets/snippet-intro.mdx';
+## **Policy**
 
-<SnippetIntro />
+This policy applies to all staff and covers all work-related functions and activities. It also applies to all recruitment, selection, and promotion decisions.
 
-## Creating a custom snippet
+**The objective of Haunt’s Equal Opportunity Policy is to improve server success by:**
 
-**Pre-condition**: You must create your snippet file in the `snippets` directory.
+- Attracting and retaining the best possible employees.
+- Providing a safe, respectful, and flexible work environment.
+- Delivering our services in a safe, respectful, and reasonably flexible way.
 
-<Note>
-  Any page in the `snippets` directory will be treated as a snippet and will not
-  be rendered into a standalone page. If you want to create a standalone page
-  from the snippet, import the snippet into another file and call it as a
-  component.
-</Note>
+## **Discrimination & Sexual Harassment**
 
-### Default export
+Haunt is committed to providing a workplace free from discrimination, sexual harassment, and bullying. Behavior that constitutes discrimination, sexual harassment, or bullying will not be tolerated and will lead to action being taken, which may include termination.
 
-1. Add content to your snippet file that you want to re-use across multiple
-   locations. Optionally, you can add variables that can be filled in via props
-   when you import the snippet.
+Haunt provides equal opportunity in employment to people without discrimination based on a personal characteristic protected under state and federal equal opportunity legislation.
 
-```mdx snippets/my-snippet.mdx
-Hello world! This is my content I want to reuse across pages. My keyword of the
-day is {word}.
-```
+Any staff members found to have contravened this policy will be subject to disciplinary action, which may include dismissal as outlined in the complaint procedure below.
 
-<Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
-</Warning>
+Staff members must report any behavior that constitutes sexual harassment, bullying, or discrimination to a manager.
 
-2. Import the snippet into your destination file.
+<Tip>
+  Staff members will not be victimized or treated unfairly for raising an issue or making a complaint.
+</Tip>
 
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
+### How to Make a Complaint
 
-import MySnippet from '/snippets/path/to/my-snippet.mdx';
+If you believe you are being, or have been, discriminated against, sexually harassed or bullied, you should follow this procedure.
 
-## Header
+Tell the offender the behavior is offensive, unwelcome, and against server policy and should stop (only if you feel comfortable enough to approach them directly, speak to a manager). Keep a record of the incident(s).
 
-Lorem impsum dolor sit amet.
+Staff members should feel confident that any complaint they make is to be treated as confidentially as possible and will not be disclosed to anyone outside of the Human Resources team.
 
-<MySnippet word="bananas" />
-```
+### Possible Outcomes
 
-### Reusable variables
+If, after investigation, HR finds the complaint is justified, HR will discuss with the complainant the appropriate outcomes, which may include:
 
-1. Export a variable from your snippet file:
-
-```mdx snippets/path/to/custom-variables.mdx
-export const myName = 'my name';
-
-export const myObject = { fruit: 'strawberries' };
-```
-
-2. Import the snippet from your destination file and use the variable:
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { myName, myObject } from '/snippets/path/to/custom-variables.mdx';
-
-Hello, my name is {myName} and I like {myObject.fruit}.
-```
-
-### Reusable components
-
-1. Inside your snippet file, create a component that takes in props by exporting
-   your component in the form of an arrow function.
-
-```mdx snippets/custom-component.mdx
-export const MyComponent = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
-    <p>... snippet content ...</p>
-  </div>
-);
-```
-
-<Warning>
-  MDX does not compile inside the body of an arrow function. Stick to HTML
-  syntax when you can or use a default export if you need to use MDX.
-</Warning>
-
-2. Import the snippet into your destination file and pass in the props
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { MyComponent } from '/snippets/custom-component.mdx';
-
-Lorem ipsum dolor sit amet.
-
-<MyComponent title={'Custom title'} />
-```
+1. Disciplinary action to be taken against the perpetrator. (counselling, strike, warning or dismissal)
+2. Staff training.
+3. Additional training for the perpetrator or all staff, as appropriate.
+4. Counselling for the complainant.
+5. An apology.

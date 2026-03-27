@@ -33,7 +33,7 @@
     },
     "tabs": [
       {
-        "tab": "Handbook",
+        "tab": "Staff Handbook",
         "icon": "user-shield",
         "groups": [
           {
@@ -45,14 +45,14 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Important",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Staffing",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -61,31 +61,16 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Miscellaneous ",
             "pages": [
               "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "ai-tools/claude-code"
             ]
           },
           {
-            "group": "API documentation",
+            "group": "Commands",
             "pages": [
               "api-reference/introduction"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
