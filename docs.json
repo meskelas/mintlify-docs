@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "palm",
   "name": "Haunt Staff",
   "colors": {
     "primary": "#ffffff",
@@ -11,47 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Staff Handbook",
-        "icon": "user-shield",
-        "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Important",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Staffing",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Miscellaneous ",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code"
-            ]
-          },
-          {
-            "group": "Commands",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          }
-        ]
+        "tab": "Untitled Tab"
       }
     ]
   },
