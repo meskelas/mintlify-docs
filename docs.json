@@ -1,36 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "willow",
-  "name": "Mint Starter Kit",
+  "name": "Haunt Staff",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ffffff",
+    "light": "#ffffff",
+    "dark": "#000000"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/haunt-staff.png",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "icon": "ghost",
-          "color": {
-            "light": "#ffffff",
-            "dark": "#ffffff"
-          },
-          "href": "https://haunt.site"
-        },
-        {
-          "anchor": "Discord",
-          "icon": "server",
-          "color": {
-            "light": "#ffffff",
-            "dark": "#ffffff"
-          },
-          "href": "https://haunt.site/discord"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Staff Handbook",
@@ -77,10 +55,7 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  "logo": "/images/haunt-staff.png",
   "navbar": {
     "links": [
       {
@@ -112,5 +87,8 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "appearance": {
+    "default": "dark"
   }
 }
