@@ -9,20 +9,26 @@
   },
   "favicon": "/images/haunt-staff.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Untitled Tab"
+        "group": "Staff Handbook",
+        "icon": "id-card",
+        "pages": [
+          {
+            "group": "Untitled Group",
+            "pages": [
+              "welcome",
+              "activity",
+              "untitled-page"
+            ]
+          }
+        ]
       }
     ]
   },
   "logo": "/images/haunt-staff.png",
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -41,14 +47,13 @@
      "vscode"
    ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  },
   "appearance": {
     "default": "dark"
-  }
+  },
+  "errors": {
+    "404": {
+      "redirect": true
+    }
+  },
+  "description": "Staff documents related to Haunt"
 }
